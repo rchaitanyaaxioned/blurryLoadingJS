@@ -181,6 +181,10 @@ sub {
 }
 
 /*for all*/
+html {
+  overflow-y: hidden;
+}
+
 body,
 html {
   height: 100%;
@@ -243,7 +247,7 @@ main .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(20px);
-  transition: filter 5s ease;
+  transition: filter 3s ease;
 }
 
 .percentage {
@@ -251,7 +255,7 @@ main .wrapper {
   font-size: 50px;
   position: absolute;
   opacity: 1;
-  transition: opacity 5s ease;
+  transition: opacity 3s ease;
 }
 
 .blur-out {
