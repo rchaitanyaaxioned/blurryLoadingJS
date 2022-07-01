@@ -224,40 +224,37 @@ main {
   height: 100%;
 }
 
-.background-img {
+main .wrapper {
+  max-width: 100%;
+  width: 100%;
   height: 100%;
-  z-index: -1;
-  background-image: url("/assets/images/welding-img.jpg");
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/welding-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(10px);
-}
-
-.background-img .wrapper {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  filter: blur(15px);
+  transition: filter 3s ease;
 }
 
 .percentage {
-  z-index: 2;
   color: #FFF;
   font-size: 50px;
+  position: absolute;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.blur-out {
+  filter: blur(0px);
+}
 
 /*=================================
   main styling ends here
