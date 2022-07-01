@@ -12,6 +12,7 @@ function updated() {
     if (upto === 100) {
         clearInterval(counts);
     }
+    document.querySelector(".percentage").classList.add("opacity-out");
 }
 
 //function for percentage counter opacity
@@ -20,25 +21,8 @@ var intervalID = 0;
 window.onload = fadeIn;
 
 function fadeIn() {
-    setInterval(show, 200);
     document.querySelector(".background-img").classList.add("blur-out");
 }
-
-function show() {
-    var body = document.getElementsByClassName("percentage");
-    opacity = Number(window.getComputedStyle(body)
-        .getPropertyValue("opacity"));
-    if (opacity == 1) {
-        opacity = opacity - 1;
-        body.style.opacity = opacity
-    } else {
-        clearInterval(intervalID);
-    }
-}
-
-
-
-
 
 
 
